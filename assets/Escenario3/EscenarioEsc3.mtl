@@ -1,0 +1,109 @@
+newmtl CajaSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_WoodBox_BaseColor.png
+Ni 1.00
+newmtl MedidorSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_Guagebox_BaseColor.png
+Ni 1.00
+newmtl PipaSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pipes_Mat_albedo.jpeg
+Ni 1.00
+newmtl Pipes_Low2SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pipes_Mat_albedo.jpeg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl TanquesSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_GassBlower_BaseColor.png
+Ni 1.00
+newmtl TuboSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_SmallPipes_BaseColor.png
+Ni 1.00
+newmtl Tubos2SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_SmallPipes_BaseColor.png
+Ni 1.00
+newmtl gFBXASC032Mask_LPSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd initialShadingGroup_albedo.jpeg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 4.31
+newmtl lambert43SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Metal_scratched_008_basecolor3.jpg
+Ni 1.00
+newmtl lambert44SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Metal_Plate_047_basecolor.jpg
+Ni 1.00
+newmtl lambert45SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd door2_low_BaseColor3.jpg
+Ni 1.00
+newmtl lambert46SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SteelGirders_Mat_albedogris.jpg
+Ni 1.00
+newmtl lambert49SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Mask_albedo.jpg
+Ni 1.00
+newmtl lambert50SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_OpenPipe_BaseColor.png
+Ni 1.00
+newmtl valvula1SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_ValvePipe_BaseColor.png
+Ni 1.00

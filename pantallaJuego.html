@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="/css/css.css" />
+    <!-- BOOSTRAP CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- LOS 3 SIGUIENTES SCRIPT SON PARA QUE FUNCIONEN CORRECTAMENTE UNAS FUNCIONES QUE INCLUYE EL BOOSTRAP , POR EJEMPLO LA ANIMACION DEL MODAL Y SU ACTIVACION -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/libs/jquery/jquery-2.1.4.min.js"
+    ></script>
+    <script type="text/javascript" src="js/libs/three/three2.js"></script>
+    <script type="text/javascript" src="js/libs/three/MTLLoader.js"></script>
+    <script type="text/javascript" src="js/libs/three/FBXLoader.js"></script>
+    <script type="text/javascript" src="js/libs/three/OBJLoader.js"></script>
+    <script type="text/javascript" src="js/libs/three/inflate.min.js"></script>
+    <script type="text/javascript" src="./todoscript.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // AQUI LO QUE HAGO ES OBTENER EL VALOR DEL LOCALSTORAGE PARA LUEGO PODER USARLO EN LOS H2 QUE TENGO PARA LOS JUGADORES
+        var jugador1 = localStorage.getItem('Jugador1')
+        var jugador2 = localStorage.getItem('Jugador2')
+        // AQUI SETEO EL VALOR QUE OBTUVE DEL LOCALSTORAGE, LO VAMO A VER CLASES NO SE ASUSTEN C:
+        $('#jugador1').text(jugador1)
+        $('#jugador2').text(jugador2)
+        $('#btn_ReiniciarNivel').on('click', function () {
+          location.reload()
+        })
+        $('#win_Volver').on('click', function () {
+          location.reload()
+        })
+        $('.close').on('click', function () {
+          $('.modalito').css('display', 'none')
+          $('.modalitoWin').css('display', 'none')
+        })
+
+        n = 0
+        // x = setInterval(function () {
+        //   console.log(n)
+        //   if (n == 5) {
+        //     clearInterval(x)
+        //     $('.modalitoWin').css('display', 'block')
+        //   }
+        //   n++
+        // }, 1000)
+      })
+    </script>
+  </head>
+  <body style="overflow: hidden" class="mi-cursor">
+    <div class="text-center">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <button
+            id="Pause"
+            type="button"
+            class="aiuda"
+            style="float: right; width: 200px; margin-top: 35px"
+            data-toggle="modal"
+            data-target=".bd-example-modal-lg"
+          ></button>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <div class="text-center">
+        <div class="row">
+          <div class="col-2" style="text-align: center; margin-top: 300px">
+            <img
+              src="/recursos/jugador1.png"
+              alt="Conejos salvajes recolectando engranes locotes"
+              width="200px;"
+            />
+            <h2 id="jugador1">Jugador1</h2>
+          </div>
+          <div class="col-8" style="margin-top: 20px">
+            <div>
+              <div id="scene-section" style="width: 50%"></div>
+            </div>
+          </div>
+          <div class="col-2" style="text-align: center; margin-top: 300px">
+            <img
+              src="/recursos/jugador2.png"
+              alt="Conejos salvajes recolectando engranes locotes"
+              width="200px;"
+            />
+            <h2 id="jugador2">Jugador1</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade bd-example-modal-lg"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content modalColor" style="color: white">
+          <div class="espacioModal text-center">
+            <img
+              src="/recursos/BTN_PAUSA.png"
+              alt="Conejos salvajes recolectando engranes locotes"
+              width="95%"
+              height="95%"
+            />
+            <div style="margin-top: 15px">
+              <button
+                id="btn_Reanudar"
+                type="button"
+                class="btn-block btn_Pause aiuda"
+                style="display: block; width: 100%"
+              ></button>
+
+              <button
+                id="btn_Reiniciar"
+                type="button"
+                class="btn-block btn_Pause aiuda"
+                style="display: block; width: 100%"
+              ></button>
+
+              <button
+                id="btn_Salir"
+                type="button"
+                class="btn-block btn_Pause aiuda"
+                style="display: block; width: 100%"
+                onclick="window.location.href='index.html'"
+              ></button>
+            </div>
+            <div clas="text-center" style="margin-top: 30px">
+              <h5 style="margin-right: 20px">Musica</h5>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                value="1"
+                step="0.1"
+                id="volumen"
+                style="width: 200px"
+                class="aiuda"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalito" style="color: white">
+      <!-- Modal content -->
+      <div class="modalito-content">
+        <span id="x" class="close aiuda">&times;</span>
+        <img
+          src="/recursos/Derrota.jpg"
+          alt="Conejos salvajes recolectando engranes locotes"
+          width="95%"
+          height="95%"
+        />
+        <img
+          src="/recursos/VUELVE.png"
+          alt="Conejos salvajes recolectando engranes locotes"
+          width="95%"
+          height="95%"
+        />
+        <div style="margin-left: 30%">
+          <h3>Puntuaciones por equipo</h3>
+          <h5 id="usuarios activos" style="margin-top: 10px">
+            Juanita y Pepito................... 150 pts
+          </h5>
+        </div>
+        <div class="d-flex justify-content-between">
+          <button id="btn_ReiniciarNivel" class="btn btn-dark btn_inline aiuda">
+            Reintentar
+          </button>
+          <button
+            id="btn_SalirJuego"
+            class="btn btn-dark btn_inline aiuda"
+            onclick="window.location.href='index.html'"
+          >
+            Salir
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalitoWin" style="color: white">
+      <!-- Modal content -->
+      <div class="modalito-content-Win">
+        <span id="x" class="close aiuda">&times;</span>
+        <img
+          src="/recursos/victoria.jpg"
+          alt="Conejos salvajes recolectando engranes locotes"
+          width="95%"
+          height="95%"
+        />
+        <img
+          src="/recursos/FELICIDADES.png"
+          alt="Conejos salvajes recolectando engranes locotes"
+          width="95%"
+          height="95%"
+        />
+        <div style="margin-left: 30%">
+          <h3>Puntuaciones por equipo</h3>
+          <h5 id="usuarios activos" style="margin-top: 10px">
+            Juanita y Pepito................... 150 pts
+          </h5>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <button id="win_Volver" class="btn btn-info btn_inline aiuda">
+            Volver a Jugar
+          </button>
+          <button
+            id="win_Salir"
+            class="btn btn-info btn_inline aiuda"
+            onclick="window.location.href='index.html'"
+          >
+            Salir
+          </button>
+        </div>
+      </div>
+    </div>
+    <audio src="/recursos/SitioMusica.mp3" autoplay loop></audio>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+newmtl CajaSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_WoodBox_BaseColor.png
+Ni 1.00
+newmtl CylinderSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SP_Hat_DefaultMaterial_BaseColor.png
+Ni 1.00
+newmtl CylinderSG2
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd BaseColor2.jpg
+Ni 1.00
+newmtl PipaSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_Ypipe_BaseColor.png
+Ni 1.00
+newmtl Sombrero6SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Texture_TopHat.jpg
+Ni 1.00
+newmtl TuboSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_OpenPipe_BaseColor.png
+Ni 1.00
+newmtl TubosSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_Pipettes_BaseColor.png
+Ni 1.00
+newmtl default1SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd map_Cap001_BaseColor.png
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood_Plywood_Front_001_basecolor.jpg
+Ni 1.00
+newmtl lambert4SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Metal_scratched_008_basecolor.jpg
+Ni 1.00
+newmtl lambert5SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Metal_Plate_047_basecolor.jpg
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_Clock1_BaseColor.png
+Ni 1.00
+newmtl lambert7SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_Guagebox_BaseColor.png
+Ni 1.00
+newmtl lambert8SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_GassBlower_BaseColor.png
+Ni 1.00
+newmtl lambert9SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_SmallPipes_BaseColor.png
+Ni 1.00
+newmtl lambert10SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd cowboyhat_Material.001_BaseColor.png
+Ni 1.00
+newmtl lambert11SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Texture_TopHat.jpg
+Ni 1.00
+newmtl pCylinder1SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wood_Plywood_Front_001_basecolor.jpg
+Ni 1.00
+newmtl valvulaSG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_ValvePipe_BaseColor.png
+Ni 1.00

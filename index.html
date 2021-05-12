@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="/css/css.css" />
+    <title>Juego de conejitos con engranes</title>
+    <!-- BOOSTRAP CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- LOS 3 SIGUIENTES SCRIPT SON PARA QUE FUNCIONEN CORRECTAMENTE UNAS FUNCIONES QUE INCLUYE EL BOOSTRAP , POR EJEMPLO LA ANIMACION DEL MODAL Y SU ACTIVACION -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AQUI VA IR EL SCRIPT PARA LA LOGISTICA , EL JQUERY PUES Y EL JAVASCRIPT -->
+    <script>
+      $(document).ready(function () {
+
+        var jugador1 = '';
+        var jugador2 = '';
+        // ESTO ES PARA GUARDAR LOCALMENTE EL NOMBRE DE LOS JUGADROES, EL LOCALSTORAGE LO VAMOS A VER DESPUES EN CLASE
+        localStorage.setItem('Jugador1','')
+        localStorage.setItem('Jugador2','')
+        $('#inicioJuego').on('click',function(){
+          
+          jugador1= $('#nombreJu1').val()
+          jugador2= $('#nombreJu2').val()
+          // console.log(jugador1)
+
+          localStorage.setItem('Jugador1',jugador1)
+          localStorage.setItem('Jugador2',jugador2)
+        })
+      })
+    </script>
+  </head>
+  <!-- EL CUERPO DEL HTML -->
+  <body class="mi-cursor">
+    <!-- ESTE DIV CONTIENE TODA LA PAGINA -->
+    <div class="text-center margin_TOP">
+      <!-- ESTA ES LA IMAGEN PRINCIPAL DE LA PORTADA DEL JUEGO -->
+      <img
+        src="/recursos/inicio.jpg"
+        alt="Conejos salvajes recolectando engranes locotes"
+        width="900"
+        height="500"
+      />
+
+      <div class="margin_TOP">
+        <!-- BOTON DEL MODAL QUE ABRE LAS OPCIONES DEL JUEGO -->
+        <button
+          id="btnSaludar"
+          type="button"
+          class="aiuda btnInicio"
+          data-toggle="modal"
+          data-target=".bd-example-modal-lg"
+        >  
+        </button>
+      </div>
+
+      <div
+        class="modal fade bd-example-modal-lg"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg ">
+          <div class="modal-content modalColor" style=" color: white;">
+            <div class="espacioModal">
+              <img
+              src="/recursos/SOBRE_EL_JUEGO.png"
+              alt="Conejos salvajes recolectando engranes locotes"
+             
+               />
+              <h5 style="margin-top: 15px;">
+                Este juego es bien shido y cool y se merece un 100 de
+                calificaion y y ayuda a la gente y vuela
+              </h5>
+              <!-- ESTE DIV ES PARA LAS COSAS QUE ESTAN EN DOS COLUMNAS  -->
+              <div class="container" style=" margin-top: 25px; ">
+                <div class="row">
+                  <div class="col">
+                   <h5>Controles del jugardor 1</h5>
+                   <img
+                      src="/recursos/controlesJugador1.png"
+                      alt="Conejos salvajes recolectando engranes locotes"     
+                      width= 150px;                 
+                   />
+                   <!-- DE AQUI VOY A TOMAR EL NOMBRE QUE ESCRIBAN LOS JUGADORES -->
+                    <input id="nombreJu1" type="text" placeholder="Nombre del jugador 1" style="margin-top: 15px;">              
+                  </div>
+                  <div class="col">
+                    <h5>Controles del jugardor 2</h5>
+                    <img
+                      src="/recursos/controlesJugador2.png"
+                      alt="Conejos salvajes recolectando engranes locotes"  
+                      width = 150px;                  
+                    />
+                     <!-- DE AQUI VOY A TOMAR EL NOMBRE QUE ESCRIBAN LOS JUGADORES -->
+                    <input id="nombreJu2" type="text" placeholder="Nombre del jugador 1" style="margin-top: 15px;">
+                  </div>
+              </div>
+            </div>
+            <img
+            style="margin-top: 25px;"
+            src="/recursos/OPCIONES.png"
+            alt="Conejos salvajes recolectando engranes locotes"
+            width="25%"
+            height="25%"
+             />  
+          <div style="margin-top: 5px;">
+             
+                <h5 class="d-inline" style="margin-right: 20px;">Musica</h5>
+                <input
+                type="range"
+                min="0"
+                max="1"
+                value="1"
+                step="0.1"
+                id="volumen"
+                style="width: 300px"
+                class="aiuda"
+              />             
+          </div>
+
+          <button    
+          id='inicioJuego'     
+          type="button"
+          class="aiuda"
+          style="margin-top: 25px; "
+          onclick="window.location.href='pantallaJuego.html'"
+        >
+         
+        </button>
+          </div>
+        </div>
+      </div>
+    </div>       
+    <audio src="/recursos/SitioMusica.mp3" autoplay loop></audio>  
+  </body>
+</html>

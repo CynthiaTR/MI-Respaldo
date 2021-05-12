@@ -1,0 +1,149 @@
+.center {
+    padding: auto;   
+    text-align: center;
+  }
+  
+  .imagenCenter{
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .margin_TOP{
+      margin-top: 25px;
+  }
+
+  
+.espacioModal{  
+    width: 85%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.btn_Pause{
+    margin-top: 15px;
+}
+
+.mi-cursor {
+    cursor:url(/recursos/cursorunengrane.png), auto !important;
+}
+
+.aiuda:hover {             
+    cursor:url(/recursos/cursorclickengrane.png), auto !important;
+ }
+
+ body {
+    background-image: url(/recursos/FONDO.jpg);
+    background-size:50%
+ }
+ .btnInicio {
+    background-image: url(/recursos/Btn_iniciar.png);
+    width: 292px;
+    height: 67px;
+    /* border: 2px solid red; */
+    border-radius: 12px;
+   /* background-size: 450px,50% */
+ }
+
+ .modalColor{
+     background-color: #252f3b !important;
+ }
+
+ #inicioJuego{
+    background-image: url(/recursos/Btn_Listo.png);
+    width: 236px;
+    height: 54px;
+    border-radius: 12px;
+ }
+
+ #Pause{
+    background-image: url(/recursos/pauseabtn.png);
+    width: 200px;
+    height: 47px;
+    border-radius: 12px;
+ }
+
+ #btn_Reanudar{
+    background-image: url(/recursos/BTN_REANUDAR.png);
+    width: 255px;
+    height: 57px;
+    border-radius: 12px;
+ }
+ #btn_Reiniciar{
+    background-image: url(/recursos/BTN_REINICIAR.png);
+    width: 255px;
+    height: 57px;
+    border-radius: 12px;
+ }
+ #btn_Salir{
+    background-image: url(/recursos/BTN_SALIR.png  );
+    width: 255px;
+    height: 57px;
+    border-radius: 12px;
+ }
+
+ /* MODAL GANAR PERDER */
+ /* The Modal (background) */
+.modalito {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content */
+ .modalito-content {
+   background-color: #252f3b;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 65%;
+   margin-bottom: 80px;
+ }
+ 
+ /* The Close Button */
+ .close {
+   color: #aaaaaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ /* ModalitoWin */
+ .modalitoWin {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content */
+ .modalito-content-Win {
+   background-color: #eb91a0;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 65%;
+   margin-bottom: 80px;
+ }

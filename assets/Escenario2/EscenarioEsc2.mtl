@@ -1,0 +1,141 @@
+newmtl Goggles_Strap1SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Goggles_MAT_albedo.jpg
+Ni 1.00
+newmtl Pipes_Low1SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl lambert3SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Metal_Plate_047_basecolor.jpg
+Ni 1.00
+newmtl lambert4SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Metal_scratched_008_basecolor3.jpg
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_ValvePipe_BaseColor.png
+Ni 1.00
+newmtl lambert8SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_WoodBox_BaseColor.png
+Ni 1.00
+newmtl lambert9SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_ValvePipe_BaseColor.png
+Ni 1.00
+newmtl lambert10SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_Guagebox_BaseColor.png
+Ni 1.00
+newmtl lambert11SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SteelGirders_Mat_albedonegro.jpg
+Ni 1.00
+newmtl lambert12SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SteelGirders_Mat_albedonegro.jpg
+Ni 1.00
+newmtl lambert13SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SteelGirders_Mat_albedonegro.jpg
+Ni 1.00
+newmtl lambert14SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SteelGirders_Mat_albedonegro.jpg
+Ni 1.00
+newmtl lambert15SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SteelGirders_Mat_albedonegro.jpg
+Ni 1.00
+newmtl lambert16SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_OpenPipe_BaseColor.png
+Ni 1.00
+newmtl lambert17SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_OpenPipe_BaseColor.png
+Ni 1.00
+newmtl lambert18SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TimeRoom_SmallPipes_BaseColor.png
+Ni 1.00
+newmtl lambert20SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DefaultMaterial_albedo.jpeg
+Ni 1.00
+newmtl lambert21SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd blinn2_Base_Color1024.jpg
+Ni 1.00
+newmtl polySurface265SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd blinn2_Base_Color1024.jpg
+Ni 1.00
+newmtl polySurface266SG
+illum 4
+Kd 0.54 0.54 0.54
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd DefaultMaterial_albedo.jpeg
+Ni 1.00
