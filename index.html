@@ -30,6 +30,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="./createUsers.js"></script>
     <!-- AQUI VA IR EL SCRIPT PARA LA LOGISTICA , EL JQUERY PUES Y EL JAVASCRIPT -->
     <script>
       $(document).ready(function () {
@@ -47,8 +48,24 @@
 
           localStorage.setItem('Jugador1',jugador1)
           localStorage.setItem('Jugador2',jugador2)
-        })
+        })    
       })
+      function crearuser(){
+        $('#inicioJuego').prop('disabled',true)
+        createPlayerConst($('#nombreJu1').val(),$('#nombreJu2').val());
+        
+        n = 0
+        
+          x = setInterval(function () {
+            if(n==3){
+              window.location.href = 'pantallaJuegoNivel1.html'
+            }
+            n++
+          }, 1000)
+                
+      }
+      
+
     </script>
   </head>
   <!-- EL CUERPO DEL HTML -->
@@ -146,8 +163,7 @@
           type="button"
           class="aiuda"
           style="margin-top: 25px; "
-          onclick="window.location.href='pantallaJuego.html'"
-        >
+          onclick= crearuser()>
          
         </button>
           </div>
@@ -155,5 +171,30 @@
       </div>
     </div>       
     <audio src="/recursos/SitioMusica.mp3" autoplay loop></audio>  
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+       <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+       <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+       <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+   
+       <script>
+         // Your web app's Firebase configuration
+         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+   
+         // Pon los datos de tu proyecto AQUI abajo
+         var firebaseConfig = {
+           apiKey: 'AIzaSyDy6lhHbSZpNsqVbexfcz4IfpezqUrWt90',
+           authDomain: 'db-mi-47c1e.firebaseapp.com',
+           projectId: 'db-mi-47c1e',
+           storageBucket: 'db-mi-47c1e.appspot.com',
+           messagingSenderId: '155828759806',
+           appId: '1:155828759806:web:0b44f7f11ed2277773c9af',
+         }
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig)
+   
+         //firebase.analytics();
+        </script>
   </body>
 </html>
